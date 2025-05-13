@@ -1,6 +1,5 @@
 streamlit
 pandas
 numpy
-shap
+streamlit_shap
 catboost
-streamlit-shap
