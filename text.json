@@ -1,0 +1,446 @@
+{
+  "title": {
+    "en": "Fraud Prediction",
+    "ru": "Предсказание мошенничества"
+  },
+  "settings": {
+    "en": "Settings",
+    "ru": "Настройки"
+  },
+  "predict_button": {
+    "en": "Predict",
+    "ru": "Предсказать"
+  },
+  "result_fraud": {
+    "en": "This person may be a fraudster.",
+    "ru": "Этот человек может быть мошенником."
+  },
+  "result_no_fraud": {
+    "en": "This person is not a fraudster.",
+    "ru": "Этот человек не является мошенником."
+  },
+  "explanation_subheader": {
+    "en": "How this decision was made?",
+    "ru": "Почему принято такое решение?"
+  },
+  "shap_main_string": {
+    "en": "Feature «{feature}» with value «{value}» {direction} doubts by {proba}",
+    "ru": "Признак «{feature}» = «{value}» {direction} вероятность мошенничества на {proba}"
+  },
+  "feature_decreasing": {
+    "en": "decreases",
+    "ru": "уменьшает"
+  },
+  "feature_increasing": {
+    "en": "increases",
+    "ru": "увеличивает"
+  },
+  "features": {
+    "Make": {
+      "label": {
+        "en": "Car Make",
+        "ru": "Марка автомобиля"
+      },
+      "options": {
+        "Honda": {
+          "en": "Honda",
+          "ru": "Хонда"
+        },
+        "Toyota": {
+          "en": "Toyota",
+          "ru": "Тойота"
+        },
+        "Ford": {
+          "en": "Ford",
+          "ru": "Форд"
+        },
+        "Mazda": {
+          "en": "Mazda",
+          "ru": "Мазда"
+        },
+        "Chevrolet": {
+          "en": "Chevrolet",
+          "ru": "Шевроле"
+        },
+        "Pontiac": {
+          "en": "Pontiac",
+          "ru": "Понтиак"
+        },
+        "Acura": {
+          "en": "Acura",
+          "ru": "Акура"
+        },
+        "Dodge": {
+          "en": "Dodge",
+          "ru": "Додж"
+        },
+        "Mercury": {
+          "en": "Mercury",
+          "ru": "Меркурий"
+        },
+        "Jaguar": {
+          "en": "Jaguar",
+          "ru": "Ягуар"
+        },
+        "Nissan": {
+          "en": "Nissan",
+          "ru": "Ниссан"
+        },
+        "VW": {
+          "en": "VW",
+          "ru": "Фольксваген"
+        },
+        "Saab": {
+          "en": "Saab",
+          "ru": "Сааб"
+        },
+        "Saturn": {
+          "en": "Saturn",
+          "ru": "Сатурн"
+        },
+        "Porsche": {
+          "en": "Porsche",
+          "ru": "Порше"
+        },
+        "BMW": {
+          "en": "BMW",
+          "ru": "БМВ"
+        },
+        "Mercedes": {
+          "en": "Mercedes",
+          "ru": "Мерседес"
+        },
+        "Ferrari": {
+          "en": "Ferrari",
+          "ru": "Феррари"
+        },
+        "Lexus": {
+          "en": "Lexus",
+          "ru": "Лексус"
+        }
+      }
+    },
+    "Sex": {
+      "label": {
+        "en": "Sex of the holder",
+        "ru": "Пол владельца полиса"
+      },
+      "options": {
+        "Male": {
+          "en": "Male",
+          "ru": "Мужской"
+        },
+        "Female": {
+          "en": "Female",
+          "ru": "Женский"
+        }
+      }
+    },
+    "MaritalStatus": {
+      "label": {
+        "en": "Marital Status",
+        "ru": "Семейное положение"
+      },
+      "options": {
+        "Single": {
+          "en": "Single",
+          "ru": "Одинокий"
+        },
+        "Married": {
+          "en": "Married",
+          "ru": "Женат/Замужем"
+        },
+        "Widow": {
+          "en": "Widow",
+          "ru": "Вдовец/Вдова"
+        },
+        "Divorced": {
+          "en": "Divorced",
+          "ru": "Разведен"
+        }
+      }
+    },
+    "Age": {
+      "label": {
+        "en": "Your age",
+        "ru": "Ваш возраст"
+      }
+    },
+    "Fault": {
+      "label": {
+        "en": "Who failed in the last claim",
+        "ru": "Чья была вина при последней аварии"
+      },
+      "options": {
+        "Policy Holder": {
+          "en": "Policy Holder",
+          "ru": "Держатель полиса"
+        },
+        "Third Party": {
+          "en": "Third Party",
+          "ru": "Третья сторона"
+        }
+      }
+    },
+    "PolicyType": {
+      "label": {
+        "en": "Policy Type",
+        "ru": "Тип полиса"
+      },
+      "options": {
+        "total": {
+          "en": "Total destroy",
+          "ru": "Полное уничтожение"
+        },
+        "damage": {
+          "en": "Damage",
+          "ru": "Ущерб"
+        },
+        "full": {
+          "en": "Full",
+          "ru": "Полное покрытие"
+        }
+      }
+    },
+    "VehicleCategory": {
+      "label": {
+        "en": "Vehicle Category",
+        "ru": "Категория автомобиля"
+      },
+      "options": {
+        "Sport": {
+          "en": "Sport",
+          "ru": "Спорт"
+        },
+        "Utility": {
+          "en": "Utility",
+          "ru": "Грузовой"
+        },
+        "Sedan": {
+          "en": "Sedan",
+          "ru": "Седан"
+        }
+      }
+    },
+    "VehiclePrice": {
+      "label": {
+        "en": "Price of your vehicle",
+        "ru": "Стоимость авто"
+      }
+    },
+    "RepNumber": {
+      "label": {
+        "en": "Number of generation of the policy",
+        "ru": "Номер поколения полиса"
+      }
+    },
+    "Deductible": {
+      "label": {
+        "en": "Price of deduction",
+        "ru": "Стоимость франшизы"
+      }
+    },
+    "DriverRating": {
+      "label": {
+        "en": "Driver Rating",
+        "ru": "Рейтинг водителя"
+      }
+    },
+    "Days:Policy-Accident": {
+      "label": {
+        "en": "Days left between policy and last accident",
+        "ru": "Дней прошло между полисом и последней аварией"
+      },
+      "options": {
+        "more than 30": {
+          "en": "More than 30",
+          "ru": "Более 30"
+        },
+        "15 to 30": {
+          "en": "15 to 30",
+          "ru": "15 до 30"
+        },
+        "none": {
+          "en": "No accidents",
+          "ru": "Аварий не было"
+        },
+        "1 to 7": {
+          "en": "1 to 7",
+          "ru": "1 до 7"
+        },
+        "8 to 15": {
+          "en": "8 to 15",
+          "ru": "8 до 15"
+        }
+      }
+    },
+    "Days:Policy-Claim": {
+      "label": {
+        "en": "Days left between policy and last claim",
+        "ru": "Дней прошло между полисом и последней заявкой о повреждениях"
+      },
+      "options": {
+        "more than 30": {
+          "en": "More than 30",
+          "ru": "Более 30"
+        },
+        "15 to 30": {
+          "en": "15 to 30",
+          "ru": "15 до 30"
+        },
+        "8 to 15": {
+          "en": "8 to 15",
+          "ru": "8 до 15"
+        },
+        "none": {
+          "en": "No claims",
+          "ru": "Не было заявок"
+        }
+      }
+    },
+    "PastNumberOfClaims": {
+      "label": {
+        "en": "Past number of claims",
+        "ru": "Прошлое количество заявлений о повреждениях"
+      },
+      "options": {
+        "none": {
+          "en": "None",
+          "ru": "Нет"
+        },
+        "1": {
+          "en": "1",
+          "ru": "1"
+        },
+        "2 to 4": {
+          "en": "2 to 4",
+          "ru": "2 до 4"
+        },
+        "more than 4": {
+          "en": "More than 4",
+          "ru": "Более 4"
+        }
+      }
+    },
+    "AgeOfVehicle": {
+      "label": {
+        "en": "Age of Vehicle",
+        "ru": "Возраст автомобиля"
+      }
+    },
+    "AgeOfPolicyHolder": {
+      "label": {
+        "en": "Age of Policy Holder",
+        "ru": "Возраст держателя полиса"
+      }
+    },
+    "PoliceReportFiled": {
+      "label": {
+        "en": "Police Report Filed",
+        "ru": "Полицейский отчет"
+      },
+      "options": {
+        "Yes": {
+          "en": "Yes",
+          "ru": "Да"
+        },
+        "No": {
+          "en": "No",
+          "ru": "Нет"
+        }
+      }
+    },
+    "WitnessPresent": {
+      "label": {
+        "en": "Witness Present",
+        "ru": "Свидетель присутствует"
+      },
+      "options": {
+        "Yes": {
+          "en": "Yes",
+          "ru": "Да"
+        },
+        "No": {
+          "en": "No",
+          "ru": "Нет"
+        }
+      }
+    },
+    "AgentType": {
+      "label": {
+        "en": "Who does provide you a police",
+        "ru": "Через кого оформлен полис"
+      },
+      "options": {
+        "Internal": {
+          "en": "Company",
+          "ru": "Компания"
+        },
+        "External": {
+          "en": "Agent",
+          "ru": "Агент"
+        }
+      }
+    },
+    "NumberOfSuppliments": {
+      "label": {
+        "en": "Number of Supplements",
+        "ru": "Количество дополнений"
+      }
+    },
+    "AddressChange-Claim": {
+      "label": {
+        "en": "When did you change your address",
+        "ru": "Когда меняли адрес вашего проживания"
+      },
+      "options": {
+        "1 year": {
+          "en": "1 year",
+          "ru": "1 год"
+        },
+        "no change": {
+          "en": "No change",
+          "ru": "Не менял"
+        },
+        "4 to 8 years": {
+          "en": "4 to 8 years",
+          "ru": "4 до 8 лет"
+        },
+        "2 to 3 years": {
+          "en": "2 to 3 years",
+          "ru": "2 до 3 лет"
+        },
+        "under 6 months": {
+          "en": "Under 6 months",
+          "ru": "Менее 6 месяцев"
+        }
+      }
+    },
+    "NumberOfCars": {
+      "label": {
+        "en": "Number of Cars",
+        "ru": "Количество автомобилей"
+      }
+    },
+    "BasePolicy": {
+      "label": {
+        "en": "Base Policy",
+        "ru": "Базовый полис"
+      },
+      "options": {
+        "total": {
+          "en": "Total destroy",
+          "ru": "Полное уничтожение"
+        },
+        "damage": {
+          "en": "Damage",
+          "ru": "Ущерб"
+        },
+        "full": {
+          "en": "Full",
+          "ru": "Полное покрытие"
+        }
+      }
+    }
+  }
+}
