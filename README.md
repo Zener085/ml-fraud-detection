@@ -53,4 +53,4 @@ SHAP is a game-theoretic approach that explains model predictions by assigning i
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE file](https://github.com/Zener085/ml-fraud-detection/blob/main/LICENSE) for details.
